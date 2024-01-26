@@ -12,23 +12,22 @@ This Jupyter Notebook serves as the implementation and documentation for an NLP 
    - Ensure access to NLTK resources by downloading necessary datasets.
 
 3. **Load and Preprocess Data:**
-   - Load the dataset (replace 'your_dataset.csv' with the actual file name).
-   - Preprocess text data by applying tokenization, stemming, and other relevant techniques.
+   - Load the dataset Leaves.txt but before we apply on some Examples.
+   - Preprocess text data by applying tokenization, stemming, Lemmitize and other relevant techniques.
 
 4. **Train-Test Split:**
-   - Split the dataset into training and testing sets.
+   - Split the dataset into training and testing sets with spliting ratio 80:20.
 
-5. **Text Vectorization:**
-   - Use Count Vectorization to convert text data into numerical format suitable for machine learning models.
+5. **Train a Classification Model:**
+   - The code demonstrates training the model using both Decision Tree and Naive Bayes classifiers.
+   - The trained model can be saved and reused for chatbot interactions.
 
-6. **Train a Classification Model:**
-   - Utilize a Multinomial Naive Bayes classifier for text classification.
-
-7. **Model Evaluation:**
+6. **Model Evaluation:**
    - Evaluate the performance of the trained model using accuracy metrics.
 
-8. **Chatbot Function:**
-   - Implement a chatbot function that takes user input, preprocesses it, and predicts the category using the trained model.
+7. **Chatbot Integration**
+   - The `reply` function can be integrated into any chatbot UI framework.
+   - The chatbot takes user input, classifies it using the trained model, and generates a relevant response
 
-9. **Example Usage:**
-   - Provide an example of interacting with the chatbot using user input.
+## **Conclusion**
+   - This project provides a foundation for building a conversational chatbot with a focus on understanding and classifying user input using NLP techniques.
